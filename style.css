@@ -1,0 +1,231 @@
+@font-face {
+    font-family: apple;
+    src: url(./assets/sf-pro-text_regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: apple;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#nav i {
+    font-size: 17px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#nav h4 {
+    font-size: 12px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#iphone-section {
+    padding: 11vh 11vh 40vh 11vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./assets/hero_iphone_17_pro__bknyzxfk2agi_mediumtall_2x.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#iphone-text h1 {
+    font-size: 4.1vw;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+#iphone-text h4 {
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 360px;
+}
+
+#iphone-buttons {
+    text-align: center;
+}
+
+#iphone-buttons button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    margin: 0 7px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #0071e3;
+    transition: all 0.3s ease;
+}
+
+#learn {
+    color: white;
+    background-color: #0071e3;
+}
+
+#buy {
+    color: #0071e3;
+    background-color: transparent;
+}
+
+#buy:hover {
+    color: white;
+    background-color: #0071e3;
+}
+
+#iphone-air {
+    padding: 11vh 11vh 40vh 11vh;
+    height: 80%;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./assets/hero_iphone_air__0gxyavihpiqu_mediumtall_2x.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#products2 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "store iphone-17"
+        "airpods watch"
+        "macbook trade";
+    gap: 10px;
+}
+
+#products2 button {
+    padding: 8px 16px;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#text h1 {
+    font-size: 35px;
+    letter-spacing: -0.5px;
+}
+
+#text h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 7px 0 15px 0;
+    padding: 0 50px;
+    letter-spacing: -0.5px;
+}
+
+#store {
+    grid-area: store;
+    padding: 50vh 11vh 5vh 11vh;
+    background-image: url(./assets/store.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#iphone-17 {
+    grid-area: iphone-17;
+    padding: 7vh 11vh 50vh 11vh;
+    background-image: url(./assets/promo_iphone_17__bhofuohbsu3m_medium_2x.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#airpods {
+    grid-area: airpods;
+    padding: 7vh 11vh 50vh 11vh;
+    background-image: url(./assets/promo_airpodspro_3__f6xmza7bglei_medium_2x.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#airpods h4{
+    padding: 0 100px;
+}
+
+#airpods sup {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#watch {
+    grid-area: watch;
+    padding: 7vh 11vh 50vh 11vh;
+    background-image: url(./assets/promo_apple_watch_series_11__b63hxviqvonm_medium_2x.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#watch #text #logo {
+    height: 35px;
+    width: 275px;
+    background-image: url(./assets/promo_logo_apple_watch_series_11_preorder__fl4pzqrs45me_medium_2x.png);
+    background-position: left;
+    background-size: contain;
+}
+
+#macbook {
+    grid-area: macbook;
+    padding: 7vh 11vh 50vh 11vh;
+    background-image: url(./assets/promo_macbook_air__fqowrtnxewqe_medium_2x.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#macbook #text h4:nth-of-type(1) {
+    margin-bottom: -7px;
+}
+
+#trade {
+    grid-area: trade;
+    padding: 7vh 11vh 50vh 11vh;
+    background-image: url(./assets/promo_iphone_tradein__bugw15ka691e_medium_2x.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#trade #text #logo {
+    height: 35px;
+    width: 150px;
+    background-image: url(./assets/promo_logo_iphone_tradein__7y3gtai5az66_medium_2x.png);
+    background-position: left;
+    background-size: contain;
+}
+
+#trade h4 {
+    padding: 3px 140px;
+}
+
